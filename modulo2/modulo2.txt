@@ -66,10 +66,28 @@ el servidor, mientras tanto es el que tiene todala info organizada y en forma de
 -robusto -muy utilizado
 -facil de configurar -compatibilidad -facil diagnostico
 
+Si quieres practicar, hay simuladores gratuitos que permiten trabajar con Modbus.
 
+Uno de ellos, el más conocido en la industria, es el ModbusPoll y ModbusSlave. Podemos usar el ModbusSlave para generar un servidor modbus, y usar nuestro propio código de Python para “apuntar” a la tabla y extraer información.
+El formato, si bien es simple, está interesante ya que nos presenta la información en forma de tabla, y podemos modificar los números almacenados como si fuera un Excel.
+https://www.modbustools.com/download.html
+
+Otro software que podemos usar para comunicar con Modbus es el Factory IO.
+https://factoryio.com/start-trial
 
 
 MQTT (Message Queuing Telemetry Transport) es un protocolo de mensajeria deisenado para la comunicacion entre
 dispositivos y aplicaciones en redes con ancho de banda limitado o condiciones de red inentables.
+Consta de minimo 2 entidades: un Broker y uno o mas clientes.
+el broker almacena y distribuye mensajes y gestiona las conexiones
+los clientes publican mensajes en un tema especifico
+los clientes se pueden suscribir a temas para recibir el valor 
+podemos usar apps de cdelular qe se suscriban a temas y muestren los valores en froma de barras,graficas,etc..
+brokers de prueba:
+MQTTCOOL https://testclient-cloud.mqtt.cool/
+MOSQUITTO https://test.mosquitto.org/
+HIVEMQ https://www.hivemq.com/
 -Ligero -confiable
 -Flexible -Facil de operar -muchas apps para utilizar
+
+Juntar AMBOS!
