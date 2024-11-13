@@ -1,0 +1,10 @@
+#DIA1 -REVOLUCIONA 
+#DIA2 -TECNOLOGIAS 
+#DIA3 -
+
+CLASES DE GOOGLE COLAB:
+Bienvenida a colab: https://colab.research.google.com/drive/1zG_n_64aXPtMX5s2FAM9Uy3XHhU3Csn-#scrollTo=8EAntfwDM3Os
+estructura de datos: https://colab.research.google.com/drive/1ADh_nS-wzpvZJFzOUwJ6a-E8FXiLo4Ik
+Funciones: https://colab.research.google.com/drive/1JrJc1I67LdkGQUfyE0e9NjoI-uHUUTyU
+Matplotlib: https://colab.research.google.com/drive/1GEZfs5UFMaIbPsrZ5VbpQOU5jzvlHJRi
+Pandas: https://colab.research.google.com/drive/1gkJDM--mLW8C61svYablSlnQJxnNAQnA
