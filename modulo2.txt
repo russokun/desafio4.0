@@ -1,0 +1,75 @@
+INTRODUCCION A LOS EQUIPOS INDUSTRIALES:
+EL PLC (Controlador Logico Progamable):
+Dispositivo programable que automatiza las habilidades cual le asignemos. 
+Fabricado para trabajo en rubros industriales ( robusto, resistente y durable )
+se programan segun la norma is6131 que determina 5 lenguajes para programar
+
+diff PLC                  VS                 ARDUINO
+resistencias o durabilidad                 mas barato
+temperaturas extremas                      mas facil de programar
+
+PANEL HMI (HUMAN MACHINE INTERFACE)
+panel tactil para mostrar informacion de un proceso teniendo datos del proceso para controlar
+y parametrizar cualquier dispositivo de la industria.
+
+SENSORES
+cualquier cosa que conectemos a sistemas industriales, relevan info fisica del entorno (caudales,temperaturas, presiones,etc)
+utilizadas para monitorear los sistemas en cantidad y calidad
+Hay miles de sensores.
+
+ACTUADORES
+ejercen accion sobre alguna magnitud fisica.(motores desactivan/activan cintas, pistones, etc)
+cualquier equipo qe permita controlar el proceso de forma directa.
+
+LAS COMUNICACIONES (SISTEMA DE COMUNICACION)
+Switches gateways que permiten conectar y establecer establecer info entre los equipos.
+uso de esto impulsa a transmitir la gran cantidad de datos ocupados en industria 4.0
+
+SCADA/DCS
+utilizados para monitorear una planta entera mas que una maquina como el HMI.
+SCADA son sistema de adquisision y supervision (control)
+DCS sistemas de control (control distribuido)
+ambos se conectan con muchos sitemas industriales para mostrar info del proceso general.
+
+Todo esto compone un sist industrial tipico.
+*procotolo de comunicacion industrial: lenguaje en el que las maquinas se informan entre si.
+
+en industria 4.0 buscamos aprovechar las nuevas tecnologias :
+ia, apps web compatibles con telefonos, mensajeria instantanea formas de almacenar grandes volumenes de info etc..
+pero todas estas las debemos aplicar a los sistemas industriales tipicos ya mencionados..
+
+el punte seria IIoT(Industrial Internet Of Things)
+distintos dispositivos:    Protocolos IoT
+dispositivo Edge           Software Especializado
+PLCS Open Source           Lenguaje de programacion.
+Gateways IoT
+Firewalls industriales
+
+ETHERNET Su puerto tecnicamente es RJ45
+Pero por otro lado (y algo muy importante para tener en cuenta) 
+es que las direcciones IP en la industria suelen ser estáticas, es decir, se configuran de forma manual. 
+Además, puede que haya más de una LAN dentro de una fábrica.
+IP en formato aaa.bbb.ccc.ddd (de a-c se repite alrededor de la red, d seria el identificador unico)
+
+PROTOCOLOS DE COMUNICACION
+Existen cientos y cada uno lleva fortalezas y debilidades.
+
+
+ModBus protocolo de comunicacion de los mas usados. usado actualmente para comunicacion entre multiples dispositivos
+en sistemas de automatizacion industrial. 
+ModBus se separa en 2 equipos: cliente(pueden ser 1 o mas), qe se conecta al server y consulta por toda la info mediante consultas validas,
+el servidor, mientras tanto es el que tiene todala info organizada y en forma de tablas con miles de filas, segmentables en 4 sectores importantes:
+-Coils:toda la info de salidas digitales del PLC (prender/apagar)
+-Inputs:toda la info qe llega al plc de forma digital(sensores de proximidad botones, 1 y 0)
+-inputs register:toda la info de sensores analogicos como temperatura, presion, etc(que miden magnitudes de no 2 valores si no varios)
+-Holding Registers: info en la que se basa la tabla que se construye, 
+-robusto -muy utilizado
+-facil de configurar -compatibilidad -facil diagnostico
+
+
+
+
+MQTT (Message Queuing Telemetry Transport) es un protocolo de mensajeria deisenado para la comunicacion entre
+dispositivos y aplicaciones en redes con ancho de banda limitado o condiciones de red inentables.
+-Ligero -confiable
+-Flexible -Facil de operar -muchas apps para utilizar
