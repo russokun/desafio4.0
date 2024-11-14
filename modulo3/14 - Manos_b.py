@@ -7,10 +7,9 @@ import time
 # Inicializar el modelo de detección de manos
 mpHands = mp.solutions.hands
 hands = mpHands.Hands(max_num_hands=1,
-                      min_detection_confidence=0.7,
-                      min_tracking_confidence=0.7,
-
-                      )
+                    min_detection_confidence=0.7,
+                    min_tracking_confidence=0.7,
+                    )
 
 mpDraw = mp.solutions.drawing_utils
 
@@ -50,7 +49,7 @@ def detectarDedo():
                     cerrados.append(0)
             return cerrados                 
         except:
-           pass
+            pass
 
 # Inicializar la cámara en el índice 6
 cap = cv2.VideoCapture(6)

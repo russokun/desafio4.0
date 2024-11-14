@@ -1,6 +1,6 @@
 import cv2
 # Inicializar la cámara
-cap = cv2.VideoCapture(6)
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("Error al abrir la cámara.")
